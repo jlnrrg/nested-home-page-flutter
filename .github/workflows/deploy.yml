@@ -24,8 +24,7 @@ jobs:
           cache: true
 
       - name: Build and Deploy Flutter Web
-        uses: bluefireteam/flutter-gh-pages@v7
+        uses: bluefireteam/flutter-gh-pages@v9
         with:
           baseHref: /nested-home-page-flutter/
-          webRenderer: canvaskit
           targetBranch: gh-pages
