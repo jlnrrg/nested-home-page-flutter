@@ -1,0 +1,42 @@
+style: {
+  fill: transparent
+}
+
+RootShellWrapper: {
+  grid-gap: 8
+  grid-rows: 2
+  grid-rows: 2
+  NavigationRail
+  NestedScrollView: {
+    grid-gap: 8
+    grid-columns: 1
+    SliverHeader
+    Navigator: "" {
+      GoRoute -> InnerScrollWidget: {
+        style.animated: true
+      }
+      InnerScrollWidget.shape: page
+      InnerScrollWidget: {
+        grid-gap: 8
+        grid-columns: 1
+        CustomScrollView: |md
+          **CustomScrollView**
+
+          Content
+        |
+        CustomScrollView.shape: rectangle
+        SliverFooter
+      }
+    }
+  }
+  BottomNavigationBar: "BottomNavigationBar (not in this demo)"
+}
+
+User: {
+  shape: person
+  style.font-color: "#6B8AFB"
+}
+User -> RootShellWrapper.NestedScrollView.Navigator.GoRoute: {
+  target-arrowhead.label: "navigate"
+  style.animated: true
+}

@@ -6,14 +6,19 @@ This repo is an implementation demo how one can archive such task.
 
 ## Requirements
 - SliverAppBar sits on top of all routes
-- Footer is defined above all routes
-- SliverAppBar can not scroll if the content does not overflow the page
+- Footer can be defined at one place and not in every route
+- SliverAppBar should not scroll if the content does not overflow the page
 - Footer which is located after the routes content and stays on the bottom of the viewport if the content is too small
 - Page Animations which only happen within the Frame
 - Wrapper Frame needs to know when route changes, to rebuild navigation elements
 - Route should be notified once it gets visible again for API refresh
 
 ## Setup
+
+<p align="center">
+  <img src="assets/architecture.svg" alt="Architecture Overview" width="800" />
+</p>
+
 ```bash
 [GoRouter] Full paths for routes:
            ├─/ (Widget)
