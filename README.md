@@ -16,7 +16,7 @@ This repo is an implementation demo how one can archive such task.
 ## Setup
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="Architecture Overview" width="800" />
+  <img src="assets/architecture.svg" alt="Architecture Overview" width="1000" />
 </p>
 
 ```bash
