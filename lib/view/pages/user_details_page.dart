@@ -34,7 +34,7 @@ class _UserDetailsPageState extends State<UserDetailsPage> with TabFocusAwareSta
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('$this $inStatefulShellText', style: theme.textTheme.headlineLarge),
+                Text('User Details $inStatefulShellText', style: theme.textTheme.headlineLarge),
                 Text('UserID: ${widget.userID}', style: theme.textTheme.headlineSmall),
               ],
             ),

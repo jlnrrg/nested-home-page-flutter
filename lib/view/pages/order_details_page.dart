@@ -34,7 +34,7 @@ class _OrderDetailsPageState extends State<OrderDetailsPage> with TabFocusAwareS
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('$this $inStatefulShellText', style: theme.textTheme.headlineLarge),
+                Text('Order Details $inStatefulShellText', style: theme.textTheme.headlineLarge),
                 Text('OrderID: ${widget.orderID}', style: Theme.of(context).textTheme.headlineSmall),
               ],
             ),

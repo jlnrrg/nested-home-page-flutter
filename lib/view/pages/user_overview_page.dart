@@ -27,7 +27,9 @@ class _UserOverviewPageState extends State<UserOverviewPage> with TabFocusAwareS
     return SliverMainAxisGroup(
       slivers: [
         SliverToBoxAdapter(
-          child: Center(child: Text('$this $inStatefulShellText', style: Theme.of(context).textTheme.headlineLarge)),
+          child: Center(
+            child: Text('User Overview $inStatefulShellText', style: Theme.of(context).textTheme.headlineLarge),
+          ),
         ),
         AdjustableSliverList(
           prefix: 'User',

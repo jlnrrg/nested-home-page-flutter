@@ -27,7 +27,9 @@ class _OrderOverviewPageState extends State<OrderOverviewPage> with TabFocusAwar
     return SliverMainAxisGroup(
       slivers: [
         SliverToBoxAdapter(
-          child: Center(child: Text('$this $inStatefulShellText', style: Theme.of(context).textTheme.headlineLarge)),
+          child: Center(
+            child: Text('Order Overview $inStatefulShellText', style: Theme.of(context).textTheme.headlineLarge),
+          ),
         ),
         AdjustableSliverList(
           prefix: 'Order',
